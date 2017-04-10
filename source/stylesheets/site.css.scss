@@ -1,15 +1,30 @@
 @import 'fonts.css';
 
+$atbash-green: #118156;
+$atbash-green-light: #149865;
+$atbash-blye-grey: #374c63;
+$atbash-base-grey: #282828;
+$atbash-white: #FFFFFF;
+$font-demi: 'AvenirNextLTW01-Demi';
+$font-regular: 'AvenirNextLTW01-Regular';
+
 body {
-  font-family: 'AvenirNextLTW01-Regular';
-  color: #282828;
+  font-family: $font-regular;
+  color: $atbash-base-grey;
   font-size: 1.4rem;
   line-height: 2rem;
+  margin: 0;
+  padding: 0;
+
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'AvenirNextLTW01-Demi';
+    font-family: $font-demi;
   }
+
   h1 { font-size: 2em; }
-  h2 { font-size: 1.5em; }
+  h2 { 
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
   h3 { font-size: 1.17em; }
   h4 { font-size: 1.12em; }
   h5 { font-size: .83em; }
@@ -19,18 +34,80 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
-  p {
+
+  p, li {
     max-width: 600px;
   }
 
+  ul {
+    padding-top: 0;
+  }
+
+  div.logo {
+    span {
+      &:first-of-type {
+        color: $atbash-green;
+        font-family: $font-demi;
+      }
+      &:nth-of-type(2) {
+        font-size: 14px;
+        margin-left: 0.4rem;
+      }
+    }
+  }
+
+  header {
+    padding: 2rem 0;
+  }
+
+  section {
+    padding: 2rem 0;
+    &.cta {
+      a {
+        background: $atbash-green;
+        color: $atbash-white;
+        padding: 1.2rem 2rem;
+        text-decoration: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        img {
+          width: 24px;
+          vertical-align: text-top;
+          margin: 1px 0.4rem 0 0;
+        }
+        &:hover {
+          background: $atbash-green-light;
+        }
+      }
+    }
+    &.features {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li {
+          max-width: 80%;
+          img {
+            max-width: 80%;
+            display: block;
+          }
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 
   footer {
-    border-top: 1px solid #282828;
+    border-top: 1px solid $atbash-blye-grey;
     margin-top: 4rem;
     padding: 2rem 0 6rem 0;
     img {
-      float: right;
-      width: 48px;
+      width: 28px;
+      vertical-align: text-top;
+      margin-right: 1rem;
     }
   }
 

@@ -4,30 +4,54 @@ title: Atbash
 
 <header>
   <div class="wrap">
-    <h1>Atbash</h1>
-    <span>a Co-op product</span>
-  </div>  
+    <div class="logo">
+      <span>Atbash</span>
+      <span>a Co-op project</span>
+    </div>
+  </div>
 </header>
 
 <section>
   <div class="wrap">
     <h1>Atbash file encryptor</h1>
-    <h2>Send sensitive documents by email with confidence.</h2>
+    <h2>Send sensitive documents by email <br>with confidence</h2>
   </div>  
 </section>
 
-<section>
+<section class="cta">
+  <div class="wrap">
+    <a href="#"><%= image_tag 'chrome.svg' %> Add to Chrome</a>
+  </div>
+</section>
+
+<section class="features">
   <div class="wrap">
     <ul>
-      <li>Atbash reminds you to encrypt your attachments</li>
-      <li>You get a link and a password so only the recipient can open your file</li>
-      <li>Select View-only if you don’t want the recipient to copy your file</li>
+      <li>
+        <img src="http://placekitten.com/g/400/200/">
+        <span>
+          Send a link to an encrypted file instead of an attachment
+        </span>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/400/200/">
+        <span>
+          Get unique link so only the recipient can open your file
+        </span>
+      </li>
+      <li>
+        <img src="http://placekitten.com/g/400/200/">
+        <span>
+          Choose when the link expires: 5 minutes later or midnight
+        </span>
+      </li>
     </ul>
   </div>  
 </section>
 
 <section>
   <div class="wrap">
+    <h3>What's it good for?</h3>
     If you've ever:
     <ul>
       <li>applied for a job</li>
@@ -37,7 +61,7 @@ title: Atbash
       <li>taken out a mortgage</li>
     </ul>
     <p>
-      you’ll have been told to send an email with a scan a passport, driver’s licence or birth certificate. But what happens to that attachment after you’ve sent it? How much did you trust the person or company you sent it to? And have you ever sent an email like this anyway - despite your concerns - so as not to slow things down?
+      you’ll have been told to send an email with a scan a passport, driver’s licence or birth certificate. But what happens to that attachment after you’ve sent it? How much did you trust the person or company you sent it to? And have you ever sent an email like this anyway &emdash; despite your concerns &emdash; so as not to slow things down?
     </p>
   </div>  
 </section>
@@ -68,7 +92,6 @@ title: Atbash
 
 <footer>
   <div class="wrap">
-    <span>Atbash is a Co-op project</span>
-    <%= image_tag 'coop.svg' %>
+    <%= image_tag 'coop.svg' %><span>Atbash is a Co-op project</span>
   </div>
 </footer>
