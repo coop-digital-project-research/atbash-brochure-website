@@ -56,6 +56,12 @@ body {
   }
 
   div.logo {
+    img {
+      width: 34px;
+      height: 34px;
+      vertical-align: text-bottom;
+      margin-bottom: -2px;
+    }
     span {
       &:first-of-type {
         color: $atbash-green;

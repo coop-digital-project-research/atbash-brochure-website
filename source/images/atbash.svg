@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>A</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="128" height="128" rx="12"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A">
+            <g id="Group-2">
+                <g id="Rectangle-4">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#00729A" stroke-width="6" x="3" y="3" width="122" height="122" rx="12"></rect>
+                </g>
+                <rect id="Rectangle-3" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="128" height="128"></rect>
+                <g id="Group-Copy" transform="translate(16.000000, 14.000000)">
+                    <path d="M61,47 C62.6281713,50.0785157 66.1128935,51.5827341 69,50 C72.2804826,49.1705224 73.7955792,45.7108199 73,43 L59,8 C54.5922116,-2.68619487 43.4845564,-2.82788134 39,8 L15,63 C14.1837064,65.7425238 15.6078464,69.2401028 19,71 C21.7102958,71.8104328 25.2331685,70.3965179 27,67 L49,15 L61,47 Z" id="Path-2" fill="#374C63" fill-rule="nonzero"></path>
+                    <path d="M13.2173005,64.8449346 C13.6495735,63.8260054 14.897203,63 15.9982843,63 L80.0017157,63 C81.1053377,63 82.3460693,63.8157349 82.7826995,64.8449346 L94.4347734,92.3105374 C95.2992242,94.3481713 94.2101231,96 91.9972215,96 L4.00277853,96 C1.79210499,96 0.699052068,94.3522344 1.56522657,92.3105374 L13.2173005,64.8449346 Z" id="Combined-Shape" fill="#149865"></path>
+                    <path d="M23.1641836,73.8235994 C23.6257923,72.8164532 24.8949384,72 26.0013893,72 L69.9986107,72 C71.1039475,72 72.3722928,72.8122751 72.8358164,73.8235994 L83,96 L13,96 L23.1641836,73.8235994 Z" id="Rectangle" fill="#118156"></path>
+                    <path d="M44,79.7453107 C42.1865159,78.4803646 41,76.3787451 41,74 C41,70.1340068 44.1340068,67 48,67 C51.8659932,67 55,70.1340068 55,74 C55,76.3787451 53.8134841,78.4803646 52,79.7453107 L52,89.0081158 C52,90.1082031 51.1132936,91 50.0018986,91 L45.9981014,91 C44.8945804,91 44,90.1066027 44,89.0081158 L44,79.7453107 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
