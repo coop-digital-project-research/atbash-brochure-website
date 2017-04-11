@@ -1,0 +1,53 @@
+body {
+  position: relative;
+}
+
+#add-to-chrome-prompt {
+  img {
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+    width: 50px;
+  }
+
+  border-radius: 0.2rem;
+  border: 1px solid grey;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  background: #fff;
+  padding: 1.5em;
+  font-size: 0.7em;
+  line-height: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  h2 {
+    font-size: 1.2em;
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  #button-bar {
+    padding-top: 1em;
+    text-align: right;
+    a {
+      background: #eee;
+      color: #333;
+      padding: 0.3rem 1rem;
+      text-decoration: none;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      border: 1px solid #aaa;
+    }
+  }
+
+
+}
