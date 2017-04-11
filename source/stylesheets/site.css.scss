@@ -4,6 +4,8 @@ $atbash-green: #118156;
 $atbash-green-light: #149865;
 $atbash-blye-grey: #374c63;
 $atbash-base-grey: #282828;
+$atbash-link: #00729a;
+$atbash-link-hover: #00394e;
 $atbash-white: #FFFFFF;
 $font-demi: 'AvenirNextLTW01-Demi';
 $font-regular: 'AvenirNextLTW01-Regular';
@@ -29,6 +31,16 @@ body {
   h4 { font-size: 1.12em; }
   h5 { font-size: .83em; }
   h6 { font-size: .75em; }
+
+  a {
+    &:link, &:visited {
+      color: $atbash-link;
+    }
+    &:hover, &:active {
+      color: $atbash-link-hover;
+    }
+
+  }
 
   .wrap {
     max-width: 800px;
@@ -77,24 +89,6 @@ body {
         }
         &:hover {
           background: $atbash-green-light;
-        }
-      }
-    }
-    &.features {
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        li {
-          max-width: 80%;
-          img {
-            max-width: 80%;
-            display: block;
-          }
-          span {
-            display: block;
-          }
         }
       }
     }
