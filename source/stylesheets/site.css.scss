@@ -4,6 +4,7 @@ $atbash-green: #118156;
 $atbash-green-light: #149865;
 $atbash-blye-grey: #374c63;
 $atbash-base-grey: #282828;
+$atbash-light-grey: #f3f3f3;
 $atbash-link: #00729a;
 $atbash-link-hover: #00394e;
 $atbash-white: #FFFFFF;
@@ -101,7 +102,7 @@ body {
   }
 
   footer {
-    border-top: 1px solid $atbash-blye-grey;
+    border-top: 1px solid $atbash-light-grey;
     margin-top: 4rem;
     padding: 2rem 0 6rem 0;
     img {
