@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Atbash</title>
+    <link href="../stylesheets/site.css" rel="stylesheet" />
+    <link href="../stylesheets/chrome-prompt.css" rel="stylesheet" />
+    <script src="../javascripts/site.js"></script>
+  </head>
+  <body>
+    <header>
+  <div class="wrap">
+    <div class="logo">
+      <img src="../images/atbash.svg" alt="Atbash" />
+      <span>Atbash</span>
+      <span>a Co-op project</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h1>Atbash: how it works</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Files you send are encrypted locally</h2>
+    <p>
+    When you share files using Atbash, your files are zipped and encrypted locally in the browser. The encryption key is randomly generated locally and becomes half of the secure link that you share.
+    </p>
+
+    <p>
+    The encrypted ZIP file is uploaded to our servers which returns a unique reference. This becomes the other half of the secure link.
+    </p>
+
+    <p>
+    A secure link looks like this:
+    </p>
+
+    <code>
+    https://atbash.org/7118dc90/#key=broad.hued.whir.lois.db.cone
+    </code>
+
+    <p>
+    The secure link contains all the information your contact needs to open your files. The unique reference allows their browser to download the encrypted ZIP file. The key part allows their browser to decrypt the files.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <h2>The server never sees the encrypted file with the key</h2>
+
+    <p>
+    Because the key part is after the hash sign (#) - the fragment identifier - it is not part of the HTTP(S) request sent to the server. That means the server only ever sees the encrypted ZIP file and not the key.
+    </p>
+
+    <p>
+    The server cannot see file names as these are inside the encrypted ZIP file.
+    </p>
+
+    <p>
+    We’ve designed Atbash this way because we don’t want to access your files and we don’t want to sell your data. It’s costly and risky for us to hold people’s personal information so working this way protects us both.
+    </p>
+
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Atbash uses strong, open source encryption</h2>
+
+    <p>
+    Atbash uses the <a href="https://tools.ietf.org/html/rfc4880">OpenPGP (RFC4880)</a> format using the open source
+    <a href="https://openpgpjs.org/">openpgp.js</a>
+    encryption library. Files are encrypted in symmetric key mode, using AES256.
+    </p>
+
+    <p>
+    A password is randomly generated in the browser using six random words from the <a href="http://world.std.com/~reinhold/diceware.html">diceware</a> word list. A six-word diceware password has about 77 bits of entropy. OpenPGP’s salted key derivation mechanism is used to derive the 256 bit key.
+    </p>
+
+    <p>
+    You can look at the source code by inspecting the Chrome extension itself or on <a href="https://tools.ietf.org/html/rfc4880">Github.</a>
+    </p>
+
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="../images/coop.svg" alt="Coop" /><span>Atbash is a Co-op project</span>
+  </div>
+</footer>
+
+  </body>
+</html>
